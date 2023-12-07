@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Be_Vietnam_Pro } from 'next/font/google'
 import './globals.css'
+import Image from 'next/image'
+import ContextProvider from './context/context-provider'
 
-const inter = Inter({ subsets: ['latin'] })
+const be_Vietnam_Pro = Be_Vietnam_Pro({ weight: '400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +17,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <ContextProvider>
+      <html lang="en">
+        <body className={`${be_Vietnam_Pro.className} bg-[#18191b] flex justify-center`}>
+            <Image className='z-0 absolute w-full' priority width={1000} height={1000} src='/hero-image-wr.jpg' alt='hero image' />
+            <Image className='z-10 absolute pt-[10%] left-[50%] -translate-x-[50%] w-auto h-auto' width={100} height={100} src='/Logo.svg' alt='hero image' />
+          {children}
+        </body>
+      </html>
+    </ContextProvider>
   )
 }
