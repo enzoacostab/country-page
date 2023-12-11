@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction, createContext } from "react";
+import { Countries } from "../types";
 
 interface Context {
   status: string,
@@ -7,8 +8,8 @@ interface Context {
   setRegions: Dispatch<SetStateAction<string[]>>,
   sortBy: string,
   setSortBy: Dispatch<SetStateAction<string>>,
-  countries: any,
-  setCountries: Dispatch<SetStateAction<any>>,
+  countries: Countries,
+  setCountries: Dispatch<SetStateAction<Countries>>,
   search: string, 
   setSearch: Dispatch<SetStateAction<string>>,
   countriesFound: number
