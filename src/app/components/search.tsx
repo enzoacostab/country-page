@@ -13,7 +13,7 @@ export default function Search () {
   }
   
   return (
-    <div className="flex justify-between items-center w-full overflow-hidden">
+    <div className="flex flex-wrap justify-between gap-3 items-center w-full overflow-hidden">
       <p className="text-md font-bold">{`Found ${countriesFound} countries`}</p>
       <div className="flex bg-[#282B30] p-2 rounded-xl w-fit gap-3">
         <Image width={30} height={30} src={'/Search.svg'} alt="Search image"/>

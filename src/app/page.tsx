@@ -7,8 +7,8 @@ import Search from "./components/search"
 
 export default async function Home() {
   return (
-    <main className="flex h-full w-full pt-[18%] text-[#6C727F] lg:px-7 justify-center">
-      <div className="bg-[#1B1D1F] mb-[10%] gap-8 flex flex-col p-8 border-y lg:border lg:rounded-lg border-[#282B30] h-full w-full z-20">
+    <main className="flex h-full w-full pt-[20%] text-[#6C727F] lg:px-7 justify-center">
+      <div className="bg-[#1B1D1F] mb-[10%] gap-8 flex flex-col p-5 border-y lg:border lg:rounded-lg border-[#282B30] h-full w-full z-20">
         <Search/>
         <div className="flex w-full flex-col lg:flex-row gap-10">
           <div className="flex flex-col w-full lg:w-[30%] gap-6"> 

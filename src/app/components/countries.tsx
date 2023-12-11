@@ -38,8 +38,8 @@ export default function Countries () {
   }, [setCountriesFound, countriesToShow])
 
   return (
-    <div className="w-full max-h-[720px] overflow-y-auto px-3">
-      <table cellPadding={10} className="w-full  text-xs text-left" >
+    <div className="w-full max-h-[720px] overflow-y-auto">
+      <table cellPadding={10} className="w-full text-xs text-left" >
         <tbody>
         <tr className="border-b sticky top-0 z-20 bg-[#1B1D1F] border-b-[#282B30] h-14">
           <th className="w-[25%]">Flag</th>
